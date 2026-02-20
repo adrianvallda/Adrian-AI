@@ -14,15 +14,32 @@ body {
     scroll-behavior: smooth;
 }
 
-header {
-    background: linear-gradient(90deg, #ff0000, #ff7300);
-    padding: 30px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 3px;
+/* 🔥 BANNER */
+.banner {
+    position: relative;
+    height: 400px;
+    background: url("banner.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.banner h1 {
+    position: relative;
+    font-size: 50px;
+    letter-spacing: 4px;
+    z-index: 1;
+    text-shadow: 2px 2px 20px black;
+}
+
+/* NAV */
 nav {
     display: flex;
     justify-content: center;
@@ -81,9 +98,9 @@ footer {
 
 <body>
 
-<header>
-🚗 SPORTBILAR 🚗
-</header>
+<div class="banner">
+    <h1>SPORTBILAR</h1>
+</div>
 
 <nav>
 <a href="#porsche">Porsche</a>
@@ -96,7 +113,7 @@ footer {
 <div class="card">
 <h2>Porsche</h2>
 <p>Ikonisk sportbil från Tyskland med racing i blodet.</p>
-<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="Porsche 911">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="Porsche">
 </div>
 </section>
 
@@ -104,7 +121,7 @@ footer {
 <div class="card">
 <h2>Lamborghini</h2>
 <p>Italiensk superbil med aggressiv design och extrem kraft.</p>
-<img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Lamborghini Aventador">
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Lamborghini">
 </div>
 </section>
 
@@ -112,7 +129,7 @@ footer {
 <div class="card">
 <h2>Ferrari</h2>
 <p>Legendarisk italiensk prestanda och Formel 1-arv.</p>
-<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" alt="Ferrari 488">
+<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" alt="Ferrari">
 </div>
 </section>
 
@@ -120,7 +137,7 @@ footer {
 <div class="card">
 <h2>Bugatti</h2>
 <p>En av världens snabbaste och mest exklusiva hyperbilar.</p>
-<img src="https://images.unsplash.com/photo-1603386329225-868f9c7a0d7e" alt="Bugatti Chiron">
+<img src="https://images.unsplash.com/photo-1603386329225-868f9c7a0d7e" alt="Bugatti">
 </div>
 </section>
 
