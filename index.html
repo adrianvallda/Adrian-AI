@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sportbilar</title>
 
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+    }
+
+    header {
+        background: linear-gradient(90deg, #ff0000, #ff7300);
+        padding: 30px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 10px black;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #111;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff3c00;
+        transform: scale(1.1);
+    }
+
+    .container {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .cars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .card {
+        background: linear-gradient(145deg, #1f1f1f, #292929);
+        border-radius: 15px;
+        width: 300px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+        transition: 0.4s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 30px rgba(255, 115, 0, 0.9);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card h2 {
+        margin-top: 15px;
+        color: #ff7300;
+    }
+
+    footer {
+        background: #000;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    button {
+        background: linear-gradient(90deg, #ff0000, #ff7300);
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    🚗 SPORTBILAR 🚗
+</header>
+
+<nav>
+    <a href="#">Hem</a>
+    <a href="#">Modeller</a>
+    <a href="#">Galleri</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<div class="container">
+    <h1>Världens Mest Kraftfulla Sportbilar</h1>
+    <p>Upptäck extrema hastigheter, lyx och design i världsklass.</p>
+
+    <div class="cars">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" alt="Ferrari">
+            <h2>Ferrari</h2>
+            <p>Italiensk passion och extrem prestanda.</p>
+            <button>Läs mer</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Lamborghini">
+            <h2>Lamborghini</h2>
+            <p>Futuristisk design och brutal kraft.</p>
+            <button>Läs mer</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="Porsche">
+            <h2>Porsche</h2>
+            <p>Tysk precision möter racingtradition.</p>
+            <button>Läs mer</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 Sportbilar | Designad med ❤️ för bilälskare
+</footer>
+
+</body>
+</html>
